@@ -26,13 +26,13 @@ class Header extends Component {
         				<span className="icon-bar"></span>
         				<span className="icon-bar"></span>
       				</button>
-        			<a className="navbar-brand" href="./index.html">
+        			<Link to="/"className="navbar-brand">
         			<i className="fa fa-shopping-bag fa-lg" aria-hidden="true"> <strong >NeoSTORE</strong> </i>
-      				</a>
+      				</Link>
       			</div>
       			<div className="collapse navbar-collapse" id="navbar">
         			<ul className="nav navbar-nav">
-          				<li><a href="./index.html">HOME</a></li>
+          				<li><Link to="/">HOME</Link></li>
         			</ul>
 
         <form autoComplete="off" className="pull-left">
@@ -59,12 +59,12 @@ class Header extends Component {
             <span className="caret"></span>
           </a>
             <ul className="dropdown-menu">
-              <li><a href="./views/user/profile.html" ><i className="fa fa-user fa-fw" aria-hidden="true"></i>Profile</a></li>
-              <li><a href="./views/user/orders.html" ><i className="fa fa-list-alt fa-fw" aria-hidden="true"></i>Orders</a></li>
-              <li><a href="./views/user/address.html" ><i className="fa fa-address-card-o fa-fw" aria-hidden="true"></i>Addresses</a></li>
-              <li><a href="/"><i className="fa fa-sign-out fa-fw" aria-hidden="true"></i>&nbsp; Logout</a></li>
-              <li><a href="./views/auth/login.html" ><i className="fa fa-sign-in fa-fw" aria-hidden="true"></i>Login</a></li>
-              <li><a href="./views/auth/register.html" ><i className="fa fa-user-plus fa-fw" aria-hidden="true"></i>Register</a></li>
+              <li><Link to="/Profile"><i className="fa fa-user fa-fw" aria-hidden="true"></i>Profile</Link></li>
+              <li><Link to="/Orders"><i className="fa fa-list-alt fa-fw" aria-hidden="true"></i>Orders</Link></li>
+              <li><Link to="/Address"><i className="fa fa-address-card-o fa-fw" aria-hidden="true"></i>Addresses</Link></li>
+              <li><Link to="/Logout"><i className="fa fa-sign-out fa-fw" aria-hidden="true"></i>&nbsp; Logout</Link></li>
+              <li><Link to="/Login"><i className="fa fa-sign-in fa-fw" aria-hidden="true"></i>Login</Link></li>
+              <li><Link to="/Register"><i className="fa fa-user-plus fa-fw" aria-hidden="true"></i>Register</Link></li>
             </ul>
           </li>
         </ul>
