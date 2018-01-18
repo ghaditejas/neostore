@@ -14,8 +14,12 @@ import Orders from './Orders';
 import Address from './Address';
 import Profile_edit from './Profile_edit';
 import Address_add from './Address_add';
+import configureStore from '../store/configureStore';
 import Featured_products from './Featured_products';
+import {loadfeature} from '../actions/courseActions';
 
+const store = configureStore();
+store.dispatch(loadfeature());
 class App extends Component {
    render() {
       return (
