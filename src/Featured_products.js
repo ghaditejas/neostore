@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import Banner from './Banner';
+import configureStore from '../store/configureStore';
+import {loadbanner} from '../actions/courseActions';
 
+const store = configureStore();
 class Featured_products extends Component{
-	render(){
+	 componentDidMount() {
+    store.dispatch(loadbanner());
+  }
+  render(){
+   
 		return (
 			
   <div className="container">

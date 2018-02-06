@@ -1,8 +1,8 @@
 export default function courseReducer(state = [],action){
 	switch(action.type){
-		case 'CREATE_COURSE':
+		case 'LOAD_FEATURE_PRODUCTS':
 			return[...state,
-			Object.assign({},action.course)
+			Object.assign({},action.featureProducts)
 			];
 
 		default:
